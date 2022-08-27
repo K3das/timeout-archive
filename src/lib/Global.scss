@@ -1,0 +1,50 @@
+@use "../lib/Colors" as colors;
+
+body {
+  background: colors.$bg;
+  font-family: 'Share Tech Mono', serif;
+  color: colors.$white;
+  padding: 0 2% 2%;
+  margin: 0;
+}
+
+a { color: colors.$light-gray; }
+
+h1 {
+  font-size: 2em;
+  color: colors.$even-lighter-gray;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+
+.sub { color: colors.$gray; }
+
+.w {
+  color: colors.$white
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.pretty > li {
+  padding-left: 1em;
+  padding-top: 0.2em;
+  text-indent: -1em;
+}
+
+ul.pretty > li:before {
+  content: "~";
+  padding-right: 0.3em;
+}
+
+hr {
+  border-top: 1px solid colors.$light-gray;
+}
+
+.no-decoration a:link { text-decoration: none; }
+.no-decoration a:visited { text-decoration: none; }
+.no-decoration a:hover { text-decoration: underline; }
+.no-decoration a:active { text-decoration: underline; }
